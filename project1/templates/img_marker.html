@@ -1,0 +1,15 @@
+<script>
+    SelectMap();
+        function SelectMap() {
+        var marker = new naver.maps.Marker({
+            position: position,
+            map: map,
+            animation: naver.maps.Animation.BOUNCE
+        });
+
+        naver.maps.Event.addListener(map, 'click', function (e) {
+            marker.setPosition(e.coord);
+        });
+    }
+</script>
+{% block contents %}{% endblock %}

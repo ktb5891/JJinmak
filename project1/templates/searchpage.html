@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block contents %}
+
+<div id="div_search">
+    <h2 style="text-align: center;">출발지/도착지 검색</h2>
+    
+    <hr>
+    <form action="/" method="post">  
+        <div style="margin: 10px;"> 
+            <label for="출발지">출발지</label><br>
+            <input type="text" class="form-control" placeholder="출발지를 입력하세요" style="width: 210px; float: left;">
+            <a href="/list" class="btn btn-dark">검색</a>
+            <br>
+            <a href="/busstop" class="btn btn-dark" style="font-size: 10px;">주변 정류소 찾기</a>
+            <br>
+            
+            <br>
+            <label for="도착지">도착지</label><br>
+            <input type="text" class="form-control" placeholder="도착지를 입력하세요" style="width: 210px; float: left;">
+            <a href="/list" class="btn btn-dark">검색</a>
+            <br>
+            <a href="/busstop" class="btn btn-dark" style="font-size: 10px;">주변 정류소 찾기</a>
+        </div>
+
+        <hr>
+        <div style="text-align: center;">
+            <button type="button" class="btn btn-dark"><a href="/route">막차탐색</a></button>
+        </div>
+    </form>
+
+</div>
+
+{% endblock %}
