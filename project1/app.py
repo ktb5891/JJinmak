@@ -10,7 +10,7 @@ from find_route import find_all_of_route
 
 app = Flask(__name__)
 
-app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+app.secret_key = '---------------'
 
 @app.route('/', methods=["POST", "GET"])
 def index():
