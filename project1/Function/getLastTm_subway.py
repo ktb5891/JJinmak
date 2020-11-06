@@ -5,7 +5,7 @@ from read_sub_csv import getStationCode
 
 def getLastTm_subway(lineNm,stationName):
     stationCode = getStationCode(lineNm,stationName)
-    serviceKey = "7a4b6365486c6368383057486e5a43"
+    serviceKey = "----------------------------------------------------"
     lastTm_dict={}
     for updown_index in range(1,3):
         url ="http://openapi.seoul.go.kr:8088/"+ serviceKey +"/xml/SearchLastTrainTimeByFRCodeService/1/10/"+ stationCode +"/1/"+str(updown_index)+"/"
