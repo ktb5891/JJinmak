@@ -7,7 +7,7 @@ def make_info_list(title,address):
     # 카카오 map의 url에 접속하여 주소 검색
     url = "https://dapi.kakao.com/v2/local/search/address.json?&query=" + address
     # 검색 결과를 result에 저장을 하고 json 포멧으로 변환
-    result = requests.get(urlparse(url).geturl(), headers={"Authorization":"KakaoAK 8b656c6a2237c29d17c0564ba73c49cc"})
+    result = requests.get(urlparse(url).geturl(), headers={"Authorization":"----------------------------------------------------"})
     print(result)
     json_obj = result.json()
     print(json_obj)
