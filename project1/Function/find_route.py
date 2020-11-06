@@ -6,10 +6,10 @@ from getLastTm_subway import getLastTm_subway
 
 def find_all_of_route(start_x,start_y,end_x,end_y):
       serviceKey_list = [
-            "qIxiuMFie1UJImwpXxXVbKcl0HNVGK6jG%2BGUd0BP5Nc%2BVsNZvNUExzx8wglwheZVYLrvChcJjOBnOp5AVaAlRw%3D%3D",
-            "PLLx23%2Beq0f7G2OdoALWYv1GrgOu%2B25clMxxWSInwiNssM7ennJ%2BY1KN6J%2F6osvdnDt6IADhSfBRcqMR0YmLog%3D%3D",
-            "hXb7UAgaoAmk2AKjJQ7GbJZSvlElShNofz0Nm35lXXfuWtdKBXiHhG2fx6XLY60zt02EpcsWXn3SvbtUkfU2rg%3D%3D",
-            "MJ7I4NJh1OHuuhX7TL%2Fj3nDuiSldj%2BGITYeZSTJqeSCTPdop9f9kUPtVIGVkYvJwxbyr07PYtef2DSX0haYqPg%3D%3D"]
+            "----------------------------------------------------",
+            "----------------------------------------------------",
+            "----------------------------------------------------",
+            "----------------------------------------------------"]
       serviceKey = serviceKey_list[0]
       url = "http://ws.bus.go.kr/api/rest/pathinfo/getPathInfoByBusNSub?serviceKey="+ serviceKey + \
             "&startX=" + str(start_x) + "&startY=" + str(start_y) + "&endX=" + str(end_x) + "&endY=" + str(end_y) + "&"
